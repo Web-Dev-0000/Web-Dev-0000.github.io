@@ -1,0 +1,365 @@
+@media (max-width: 1100px){
+  // PROJECTS
+  
+  .pojects__inner-block img{
+    width: 280px;
+    height: 300px;
+  }
+  .projects .pojects__inner-block div{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .projects__text{
+    width: 280px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  // ABOUT
+  .about__inner{
+    justify-content: space-around;
+  }
+  // OURWORK
+.ourWork div img{
+  width: 320px;
+  height: 300px;
+}
+// REVIEWS
+.reviews__inner{flex-wrap: wrap; justify-content: space-around; padding-bottom: 0;}
+.reviews__item{width: 100%;}
+.reviews__item-text p{width: 90%; padding-right: 10px; padding-left: 10px;}
+.reviews__item-text svg{padding-left: 10px;}
+#section-6 > div > div > div > p{padding-left: 10px;}
+}
+
+@media (max-width: 920px){
+  // PARTNERS
+  .partners__logos{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  // REVIEWS
+.reviews h3{padding-top: 90px; margin-bottom: 50px;}
+}
+
+@media (max-width: 885px){
+  .pojects__inner-block img{
+    width: 250px;
+    height: 270px;
+  }
+  .projects .pojects__inner-block div{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .projects .inner__block-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+
+  }
+
+  .projects__text{
+    width: 250px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  // ABOUT
+  .about{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 820px){
+  // CONTACTS
+  .contants{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  
+  }
+  .contacts__inner{flex-wrap: wrap; justify-content: space-around; }
+  .contacts__item{font-size: 20px;}
+}
+
+@media (max-width: 800px){
+  .title{
+    font-size: 34px;
+  }
+
+  // HEDER
+
+  .header{
+
+    &__top{
+      margin-bottom: 50px;
+    }
+    &__content h1{
+      font-size: 50px;
+    }
+    &__content{
+      padding-bottom: 200px;
+    }
+    &__table{
+      height: 240px;
+      bottom: -120px;
+    }
+    &__table-block span:nth-child(1){
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    &__table-block span:nth-child(2){
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+    &__table-block span:nth-child(3){
+      font-size: 15px;
+    }
+  }
+
+// PROJECTS
+.projects {
+  padding-top: 210px;
+  &__inner{
+    justify-content: space-around;
+  }
+}
+.block-top{
+  display: block;
+}
+.projects .pojects__inner-block:nth-child(1){
+display: none;
+}
+
+// QUESTIONS
+.questions {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+// Request
+.yourRequest{
+  height: 230px;}
+}
+@media (max-width: 735px){
+
+  // Request
+  .yourRequest{
+    &__text{
+      margin-bottom: 25px;
+      text-align: center;  
+    }
+    
+  }
+  .yourRequest-container{
+    flex-direction: column;
+  }
+// PARTNERS
+.partners__title{
+  padding-top: 60px;
+}
+
+ // ABOUT
+ .about{
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+.about__inner-block{
+  width: 100%;
+}
+
+// REVIEWS
+.reviews__item:not(:last-child){margin-bottom: 40px;}
+
+}
+
+@media (max-width: 690px){
+// OURWORK
+.ourWork div img{
+  width: 200px;
+  height: 160px;
+}
+}
+
+@media(max-width: 660px){
+   // CONTACTS
+   
+  .contacts__item{margin-bottom: 30px;}
+
+  // Request
+.yourRequest__title{  font-size: 42px; margin-bottom: 15px;}
+.yourRequest__subtitle{font-size: 22px;}
+// FOOTER
+.footer__container{display: block;}
+.footer__copyrigts{margin-bottom: 5px;}
+}
+@media (max-width: 600px){
+
+  .title{
+    font-size: 32px;
+  }
+
+// HEDER
+.header{
+  &__content h1{
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+}
+
+@media (max-width: 540px){
+// PROJECTS
+.projects{
+  padding-top: 180px;}
+  .yourRequest{
+    margin-top: 50px;
+  }
+.pojects__inner-block img{
+  width: 140px;
+  height: 150px;
+}
+
+.projects__text{
+  width: 140px;
+}
+// QUESTIONS
+.questions {
+  padding-top: 70px;
+  padding-bottom: 20px;
+}
+.questions__item-title{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+// Request - bottom
+.yourRequest-2{
+  height: 280px;
+}
+}
+@media (max-width: 530px){
+  .yourRequest{ height: 290px;}
+
+  // REVIEWS
+  .reviews__inner{
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 500px){
+
+  .title{
+    font-size: 30px;
+  }
+
+// HEDER
+.header{
+  &__table{
+    flex-wrap: wrap;
+    height: 200px;
+    bottom: -100px;
+      }
+      &__table-block span:nth-child(1){
+        font-size: 30px;
+        margin-bottom: 10px;
+      }
+      &__table-block span:nth-child(2){
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      &__table-block span:nth-child(3){
+        font-size: 13px;
+      }
+      &__table-block{
+        height: 70px;
+        width: 50px;
+      }
+}
+// PROJECTS
+.projects{
+  padding-top: 150px;}
+
+  // Request
+.yourRequest__title{  font-size: 40px; margin-bottom: 12px; line-height: 45px;}
+.yourRequest__subtitle{font-size: 20px;}
+
+// PARTNERS
+.partners__title{
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+}
+
+@media (max-width: 475px){
+ // OURWORK
+.ourWork div img{
+  width: 150px;
+  height: 110px;
+}
+
+// REVIEWS
+#section-6 > div > div > div > p{font-size: 18px; margin-top:15px;}
+.reviews__item:not(:last-child){margin-bottom: 70px;}
+
+// CONTACTS
+.contacts__item{
+  font-size: 18px;
+}
+ // FOOTER
+ .footer__container{font-size: 14px;}
+}
+
+@media (max-width: 400px){
+  .title{
+    font-size: 28px;
+  }
+
+  // PROJECTS
+  
+  .projects {
+    &__inner{
+      flex-wrap: wrap;
+    }
+  }
+  .block-top{
+    display: none;
+  }
+  .projects .pojects__inner-block:nth-child(1){
+  display: block;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  }
+  .projects .pojects__inner-block:nth-child(1) img{
+    width: 310px;
+    height: 340px;
+    }
+    .projects .pojects__inner-block:nth-child(1) .projects__text{
+      width: 310px;
+    }
+
+    // PARTNERS
+    .partners{
+      height: 490px;
+    }
+
+}
+@media (max-width: 375px){
+  // HEDER
+  .header{
+    &__content h1{
+      font-size: 32px;
+      line-height: 50px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .questions__item-title{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .questions__item-text{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  }

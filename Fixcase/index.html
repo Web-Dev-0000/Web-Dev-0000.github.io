@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <a href="#" class="header__logo">
+                <picture class="logo__img">
+                  <img class="header__img-mob" src="images/logo-mobile.png" alt="">
+                  <img class="header__img" src="images/logo.png" alt="">
+                </picture>
+              </a>
+              
+              <div class="header__top-menu">
+                <div class="header__top-menu_1">
+                  <nav class="menu-nav">
+                    <ul class="menu-nav__list">
+                      <li class="menu-nav__list-item">
+                        <a class="menu-nav__item-link" href="#">Распродажа</a>
+                      </li>
+                      <li class="menu-nav__list-item">
+                        <a class="menu-nav__item-link" href="#">Акции</a>
+                      </li>
+                      <li class="menu-nav__list-item">
+                        <a class="menu-nav__item-link" href="#">Магазины</a>
+                      </li>
+                      <li class="menu-nav__list-item">
+                        <a class="menu-nav__item-link" href="#">Доставка и оплата</a>
+                      </li>
+                      <li class="menu-nav__list-item">
+                        <a class="menu-nav__item-link" href="#">Возврат</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="header__info">
+                    <a href="tel:89002834869  " class="header__phone">8 (900) 283-48-69</a>
+                    <select class="header__adres" name="Город" id="#">
+                      <option value="Краснодар">Краснодар</option>
+                      <option value="Новоросийск">Новоросийск</option>
+                      <option value="Сочи">Сочи</option>
+                      <option value="Ростов-на-Дону">Ростов-на-Дону</option>
+                      <option value="Анапа">Анапа</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="header__top-menu_2">
+                  <button class="header__btn-catalog">
+                    <span></span> Каталог
+                  </button>
+                  <div class="header__search-group">
+                    <form>
+                      <input type="search" placeholder="Поиск">
+                      <button class="header__search-btn" type="submit"></button>
+                      <img class="header__icon-search" src="images/svg/search.svg" alt="">
+                    </form>
+                  </div>
+                  <ul class="header__user-list">
+                    <li class="header__user-list__item">
+                      <a href="#" class="header__user-list__link">
+                        <img src="images/svg/favorites.svg" alt=""> <p class="header__user-list__text"> Избранное </p>
+                      </a>
+                    </li>
+                    <li class="header__user-list__item">
+                      <a href="#" class="header__user-list__link">
+                        <img src="images/svg/user-profil.svg" alt=""><p class="header__user-list__text"> Профиль</p>
+                      </a>
+                    </li>
+                    <li class="header__user-list__item">
+                      <a href="#" class="header__user-list__link header__basket">
+                        <img src="images/svg/basket.svg" alt=""> <p class="header__basket-num">2</p> <p class="header__user-list__text"> Корзина</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="header__bottom-inner">
+              <ul class="menu-categories">
+                <li class="menu-categories__item">
+                  
+                  <a class="menu-categories__link" href="#"><img src="images/svg/covers.svg" alt="">Чехлы-накладки</a>                
+                </li>
+                <li class="menu-categories__item">                 
+                  <a class="menu-categories__link" href="#"><img src="images/svg/chargers.svg" alt="">Сетевые зарядки</a>                 
+                </li>
+                <li class="menu-categories__item">                 
+                  <a class="menu-categories__link" href="#"><img src="images/svg/headphones.svg" alt="">Наушники и гарнитуры</a>                 
+                </li>
+                <li class="menu-categories__item">                 
+                  <a class="menu-categories__link" href="#"><img src="images/svg/auto-charging.svg" alt="">Автомобильные зарядки</a>                 
+                </li>
+                <li class="menu-categories__item">                 
+                  <a class="menu-categories__link" href="#"><img src="images/svg/glass-phone.svg" alt="">Стекла и пленки</a>
+                </li>
+                <li class="menu-categories__item">                 
+                  <a class="menu-categories__link"><img src="images/svg/popsocket.svg" alt="">Держатели и попсокеты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="top-mobile-box">
+          <div class="container">
+            <div class="top-mobile">
+              <div class="top-mobile__logo">
+                <img src="images/logo-mobile.png" alt="">
+              </div>
+              <div class="top-mobile__user-icons">
+                <button class="top-mobile__btn">
+                  <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M11.9999 19.5335C11.9999 19.5335 1.33325 14.1032 1.33325 7.50923C1.33347 6.34378 1.77768 5.21437 2.59037 4.31303C3.40305 3.41168 4.53404 2.79402 5.79105 2.56507C7.04806 2.33613 8.3535 2.51002 9.48542 3.05719C10.6173 3.60435 11.5059 4.49102 11.9999 5.56644L11.9999 5.56645C12.494 4.49103 13.3825 3.60436 14.5144 3.05719C15.6463 2.51002 16.9518 2.33613 18.2088 2.56507C19.4658 2.79402 20.5968 3.41167 21.4095 4.31302C22.2222 5.21437 22.6664 6.34378 22.6666 7.50923C22.6666 14.1032 11.9999 19.5335 11.9999 19.5335Z"
+                      stroke="#737C92" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+                <button class="top-mobile__btn">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M18.5424 3.45744C16.5278 1.44279 13.849 0.333252 10.9999 0.333252C8.15063 0.333252 5.47209 1.44279 3.45744 3.45744C1.44279 5.47209 0.333252 8.15063 0.333252 10.9999C0.333252 13.849 1.44279 16.5278 3.45744 18.5424C5.47209 20.557 8.15063 21.6666 10.9999 21.6666C13.849 21.6666 16.5278 20.557 18.5424 18.5424C20.557 16.5278 21.6666 13.849 21.6666 10.9999C21.6666 8.15063 20.557 5.47209 18.5424 3.45744ZM5.68075 18.766C6.12687 16.1973 8.35278 14.3027 10.9999 14.3027C13.6472 14.3027 15.873 16.1973 16.3191 18.766C14.8046 19.8066 12.9722 20.4166 10.9999 20.4166C9.02759 20.4166 7.19523 19.8066 5.68075 18.766ZM7.60832 9.66105C7.60832 7.79077 9.1298 6.26945 10.9999 6.26945C12.87 6.26945 14.3915 7.79093 14.3915 9.66105C14.3915 11.5312 12.87 13.0527 10.9999 13.0527C9.1298 13.0527 7.60832 11.5312 7.60832 9.66105ZM17.4018 17.899C17.0653 16.7032 16.3972 15.6182 15.4607 14.7708C14.8861 14.2507 14.2322 13.8404 13.5291 13.5512C14.7999 12.7222 15.6417 11.2882 15.6417 9.66105C15.6417 7.10164 13.5593 5.01945 10.9999 5.01945C8.44051 5.01945 6.35832 7.10164 6.35832 9.66105C6.35832 11.2882 7.20011 12.7222 8.47078 13.5512C7.76782 13.8404 7.11369 14.2506 6.53914 14.7706C5.60278 15.6181 4.93449 16.703 4.59806 17.8988C2.74504 16.178 1.58325 13.7222 1.58325 10.9999C1.58325 5.80754 5.80754 1.58325 10.9999 1.58325C16.1923 1.58325 20.4166 5.80754 20.4166 10.9999C20.4166 13.7224 19.2548 16.1781 17.4018 17.899Z"
+                      fill="#737C92" stroke="#737C92" stroke-width="0.4" />
+                  </svg>
+                </button>
+                <button class="top-mobile__btn">
+                  <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M17.8785 18.961L16.5715 5.70885C16.5358 5.34694 16.2026 5.06974 15.8036 5.06974H13.1082V3.96297C13.1082 1.90029 11.2651 0.222168 8.99966 0.222168C6.73429 0.222168 4.89141 1.90029 4.89141 3.96297V5.06974H2.1942C1.79515 5.06974 1.462 5.34694 1.42633 5.70885L0.114167 19.0131C0.0948414 19.2095 0.167003 19.404 0.313073 19.5495C0.459143 19.6949 0.665655 19.7777 0.882036 19.7777H17.1159H17.1179C17.5438 19.7777 17.8889 19.4635 17.8889 19.0758C17.8888 19.0368 17.8853 18.9983 17.8785 18.961ZM6.43331 3.96297C6.43331 2.67436 7.5846 1.62599 8.99977 1.62599C10.415 1.62599 11.5664 2.67436 11.5664 3.96297V5.06974H6.43331V3.96297ZM1.72536 18.374L2.89906 6.47356H4.89141V7.72876C4.89141 8.1164 5.23649 8.43066 5.66236 8.43066C6.08824 8.43066 6.43331 8.1164 6.43331 7.72876V6.47356H11.5664V7.72876C11.5664 8.1164 11.9115 8.43066 12.3374 8.43066C12.7633 8.43066 13.1083 8.1164 13.1083 7.72876V6.47356H15.0988L16.2725 18.374H1.72536Z"
+                      fill="#737C92" />
+                  </svg>
+                </button>
+              </div>
+              <button class="menu-btn">
+                <span></span>
+              </button>
+            </div>
+                         
+          </div>
+          <div class="top-mobail-search">
+            <div class="container">
+              <form>
+                <input type="text" placeholder="Поиск">
+                <button  type="submit"></button>
+              </form>
+            </div>
+            </div>            
+              <div class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item"><h3>Наши предложения:</h3></li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Распродажа</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Акции</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Магазины</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Доставка и оплата</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="#">Возврат</a>
+                  </li>
+                <li class="menu__item"><h3>Категории:</h3></li>
+                <li class="menu__item">              
+                  <a class="menu__link" href="#"><img src="images/svg/covers.svg" alt="">Чехлы-накладки</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"><img src="images/svg/chargers.svg" alt="">Сетевые зарядки</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"><img src="images/svg/headphones.svg" alt="">Наушники и гарнитуры</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"><img src="images/svg/auto-charging.svg" alt="">Автомобильные зарядки</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#"><img src="images/svg/glass-phone.svg" alt="">Стекла и пленки</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link"><img src="images/svg/popsocket.svg" alt="">Держатели и попсокеты</a>
+                </li>
+              </ul>
+            </div>            
+        </div>
+  </header>
+   <main class="main">
+    <section class="banners-section">
+      <div class="container">
+        <div class="banners-section__inner-top">
+          
+          <div class="banners-section__slider">            <a href="#" class="banners-section__slider-link">Узнать больше <img src="images/svg/slider-button.svg" alt=""></a>
+            <div class="banners-section__slider-item">
+              <img src="images/banner-slider.jpg" alt="">      
+            </div>
+            <div class="banners-section__slider-item">
+              <img src="images/banner-slider.jpg" alt="">
+            </div>
+            <div class="banners-section__slider-item">
+              <img src="images/banner-slider.jpg" alt="">
+            </div>
+            <div class="banners-section__slider-item">
+              <img src="images/banner-slider.jpg" alt="">
+            </div>            
+          </div>
+          <div class="banners-section__product banners-product">
+            <button class="banners-section__product-fav-btn" >
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                  fill="#currentColor" />
+              </svg>
+            </button>
+
+            <button class="banners-section__product_item-basket banners-section__product_item-basket-img"></button>
+            <div class="banners-section__product-item banners-product-item">              
+              <img class="banners-section__product_item-img" src="images/banners__product.png" alt="">
+              <a class="banners-section__product_item-category" href="#">Аксессуары</a>
+              <a class="banners-section__product_item-title" href="#">
+                Силиконовый чехол Soft TPU для Samsung Galaxy A31 черный
+              </a>
+              
+              <p class="banners-section__product_item-price">14 900 ₽</p>
+              
+            </div>
+            </div>
+            <div class="banProd-none">
+              <button class="banProd-none-fav-btn">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                    fill="#currentColor" />
+                </svg>
+              </button>
+              <div class="banProd-none__inner1">
+                <img class="" src="images/banners__product.png" alt="">
+                <div class="banProd-none__text">
+                  <a class="banProd-none__category" href="#">Аксессуары</a><br>
+                  <a class="banProd-none__title" href="#">
+                    Силиконовый чехол Soft TPU для Samsung Galaxy A31 черный
+                  </a>
+                </div>
+            </div>
+                <div class="banProd-none__inner2">
+                  <p class="banProd-none__price">14 900 ₽</p>
+                  <button class="banProd-none__basket"><img src="images/svg/banProd-none-btn.svg" alt=""></button>
+                </div>        
+              
+            </div>
+        </div>
+         <div class="banners-section__inner-bottom">
+          <div class="banners-section__wrapper banners-section__wrapper1"> 
+             <a href="#" class="banners-section__banner-link-bottom">Узнать больше
+                <img src="images/svg/slider-button.svg" alt=""></a> 
+             <div class="banners-section__banner-bottom">  
+               <img src="images/banner 01.jpg" alt=""> 
+             </div> 
+           </div> 
+           <div class="banners-section__wrapper banners-section__wrapper2 __wrapper2"> 
+             <a href="#" class="banners-section__banner-link-bottom">Узнать больше
+              <img src="images/svg/slider-button.svg" alt=""></a> 
+             <div class="banners-section__banner-bottom"> 
+               <img src="images/banner 02.jpg" alt=""> 
+             </div> 
+          </div>   
+                 
+        </div>
+      </div>
+    </section>
+    <section class="products">
+     <div class="container">
+       <div class="products__inner">
+         <div class="tabs-wrapper">
+           <div class="products__header">
+            <div class="products__title-btn_box">
+              <h3 class="title products__title">Популярное</h3><button class="products__title-btn"><img  src="images/svg/btn arrow right-mini.svg" alt=""></button>
+            </div>
+             <div class="tabs products__tabs">
+               <a  class="tab products__tab tab--active" href="#popular-tab-1">Популярное</a>
+              <a class="tab products__tab" href="#popular-tab-2">Со скидкой</a>
+              <a class="tab products__tab" href="#popular-tab-3">Новинки</a>
+             </div>
+           </div>
+           <div class="tabs-container products-container">
+            <ul class="dots-mini">
+              <li><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#currentColor" />
+                </svg>
+              </li>
+              <li><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#currentColor" />
+                </svg>
+              </li>
+              <li><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#currentColor" />
+                </svg>
+              </li>
+              <li><svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="3" cy="3" r="3" fill="#currentColor" />
+                </svg>
+              </li>
+            </ul>
+
+            
+                <div id="popular-tab-1" class="tabs-content products-content tabs-content--active">
+              
+                 
+                   <div class="banners-section__product product-box">
+                    <button class="banners-section__product-fav-btn">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                          fill="#currentColor" />
+                      </svg>
+                    </button>
+                    <button class="banners-section__product_item-basket bn-sec-bsck banners-section__product_item-basket-img"></button>                   
+                    <div class="banners-section__product-item banners-section__product-item--sale
+                    banners-section__product-item--new">
+                      <img class="banners-section__product_item-img" src="images/products__img1.png" alt="">
+                      <a class="banners-section__product_item-category" href="#">Телефоны</a>
+                      <a class="banners-section__product_item-title" href="#">Телефон INOI 281 (черный)
+                      </a>                  
+                      <p class="banners-section__product_item-price banners-section__product_item-price-old">780 ₽</p>                  
+                    </div>
+                    </div>
+
+                    <div class="banners-section__product product-box">
+                    <button class="banners-section__product-fav-btn" >
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                  fill="#currentColor" />
+              </svg>
+            </button>
+                    <button class="banners-section__product_item-basket banners-section__product_item-basket-img"></button>
+                    
+                    <div class="banners-section__product-item   banners-section__product-item--new1">
+                      <img class="banners-section__product_item-img" src="images/products__img2.png" alt="">
+                      <a class="banners-section__product_item-category" href="#">Аксессуары</a>
+                      <a class="banners-section__product_item-title" href="#">Сетевое зарядное устройство 1 USB Adapter 1A (черный)
+                      </a>
+                      <p class="banners-section__product_item-price">780 ₽</p>
+                    </div>
+                  </div>  
+
+                  <div class="banners-section__product product-box">
+                    <button class="banners-section__product-fav-btn" >
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                  fill="#currentColor" />
+              </svg>
+            </button>
+                    <button class="banners-section__product_item-basket banners-section__product_item-basket-img"></button>
+                    <div class="banners-section__product-item banners-section__product-item--sale
+                    banners-section__product-item--new">
+                      <img class="banners-section__product_item-img" src="images/products__img3.png" alt="">
+                      <a class="banners-section__product_item-category" href="#">Аксессуары</a>
+                      <a class="banners-section__product_item-title" href="#">Подставка для смартфона с регулировкой угла обзора (черный)
+                      </a>
+                      <p class="banners-section__product_item-price banners-section__product_item-price-old">780 ₽</p>
+                    </div>
+                  </div>   
+
+                  <div class="banners-section__product product-box">
+                    <button class="banners-section__product-fav-btn" >
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                  fill="#currentColor" />
+              </svg>
+            </button>
+                    <button class="banners-section__product_item-basket banners-section__product_item-basket-img"></button>
+                    <div class="banners-section__product-item 
+                    banners-section__product-item--new1">
+                      <img class="banners-section__product_item-img" src="images/products__img4.png" alt="">
+                      <a class="banners-section__product_item-category" href="#">Аксессуары</a>
+                      <a class="banners-section__product_item-title" href="#">Беспроводные наушники Devia TWS V6 Airpods Analogue (белый)
+                      </a>
+                      <p class="banners-section__product_item-price">780 ₽</p>
+                    </div>
+                  </div>        
+
+                  <div class="banners-section__product product-box">
+                    <button class="banners-section__product_item-favorite"></button>
+                    <button class="banners-section__product_item-basket banners-section__product_item-basket-img"></button>
+                    <div class="banners-section__product-item">
+                      <img class="banners-section__product_item-img" src="images/products__img5.png" alt="">
+                      <a class="banners-section__product_item-category" href="#">Аксессуары</a>
+                      <a class="banners-section__product_item-title" href="#">Кабель Ruler Flat Lightning to USB 1m (белый)
+                      </a>
+                      <p class="banners-section__product_item-price">780 ₽</p>
+                    </div>
+                  </div>  
+
+                  <div class="banners-section__product product-box">
+                    <button class="banners-section__product-fav-btn" >
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                  fill="#currentColor" />
+              </svg>
+            </button>
+                    <button class="banners-section__product_item-basket banners-section__product_item-basket-img"></button>
+                    <div class="banners-section__product-item">
+                      <img class="banners-section__product_item-img" src="images/products__img6.png" alt="">
+                      <a class="banners-section__product_item-category" href="#">Аксессуары</a>
+                      <a class="banners-section__product_item-title" href="#">Автомобильный держатель в решетку вентеляции с магнитом (черный)
+                      </a>
+                      <p class="banners-section__product_item-price">780 ₽</p>
+                    </div>
+                  </div>         
+
+                  <div class="banners-section__product product-box">
+                    <button class="banners-section__product-fav-btn" >
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                  fill="#currentColor" />
+              </svg>
+            </button>
+                    <button class="banners-section__product_item-basket banners-section__product_item-basket-img"></button>
+                    <div class="banners-section__product-item">
+                      <img class="banners-section__product_item-img" src="images/products__img7.png" alt="">
+                      <a class="banners-section__product_item-category" href="#">Телефоны</a>
+                      <a class="banners-section__product_item-title" href="#">Телефон BQ-1806 ART+ (красный)
+                      </a>
+                      <p class="banners-section__product_item-price">780 ₽</p>
+                    </div>
+                  </div>    
+
+                  <div class="banners-section__product product-box">
+                    <button class="banners-section__product-fav-btn" >
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                  fill="#currentColor" />
+              </svg>
+            </button>
+                    <button class="banners-section__product_item-basket banners-section__product_item-basket-img"></button>
+                    <div class="banners-section__product-item banners-section__product-item--sale
+                    banners-section__product-item--new">
+                      <img class="banners-section__product_item-img" src="images/products__img8.png" alt="">
+                      <a class="banners-section__product_item-category" href="#">Телефоны</a>
+                      <a class="banners-section__product_item-title" href="#">Телефон BQ-1806 ART+ (синий)
+                      </a>
+                      <p class="banners-section__product_item-price banners-section__product_item-price-old">780 ₽</p>
+                    </div>
+                  </div>  
+                </div>
+            <div id="popular-tab-2" class="tabs-content products-content"></div>
+            <div id="popular-tab-3" class="tabs-content products-content"></div>
+            </div>
+            </div>
+            </div>
+            </div>
+    </section>
+    <section class="advertis">
+      <div class="container">
+        <div class="advertis__content">
+          <h2 class="advertis__title">
+            <span>более чем 1000 довольных покупателей</span><br>
+            Ежедневно выбирают нас
+          </h1>
+          <div class="advertis__list">
+            <ul class="advertis__list-1">
+              <li class="advertis__list-item">Аксессуары от топовых брендов</li>
+              <li class="advertis__list-item">Большой ассортимент</li>
+              <li class="advertis__list-item">Быстрая онлайн оплата</li>
+              <li class="advertis__list-item">Удобно забирать</li>
+          </div>
+         
+          <button class="advertis__btn">
+            Начать покупки
+          </button>
+        </div>
+
+      </div>
+    </section>
+    <section class="viewed">
+      <div class="container">
+        <h2 class=" title viewed-title-mini">Самые просматриваемые</h2>
+        <div class="viewed__header">
+          <h2 class="title">Часто просматриваемые</h2>
+          <div class="viewed__slider-arrows">
+            <button><img class="viewed__slider-arrow1" src="images/svg/viewed__slider-arrow-left.svg" alt=""></button>
+            <button>
+              <img class="viewed__slider-arrow2" src="images/svg/viewed__slider-arrow-left.svg" alt="">
+                        </div>
+            </button>
+      </div>
+        <div class="viewed__inner">
+          <div class="viewed__page">
+            <p class="viewed__page-title">Музыка всегда с тобой</p>
+            <img src="images/viewed__page.png" alt="">
+          </div>
+          <div class="viewed__slider-box">
+            
+            <div class="viewed__slide viewed__slide-1">
+              <div class="banners-section__product viewed__product">
+                <button class="banners-section__product-fav-btn">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                          fill="#currentColor" />
+                      </svg>
+                    </button>
+                <button class="banners-section__product_item-basket banners-section__product_item-basket-img"></button>
+                <div class="banners-section__product-item   banners-section__product-item--new1">
+                  <img class="banners-section__product_item-img" src="images/viewed__product-1.png" alt="">
+                  <a class="banners-section__product_item-category" href="#">Наушники</a>
+                  <a class="banners-section__product_item-title" href="#">
+                    Наушники EAR35 (желтый)
+                  </a>              
+                  <p class="banners-section__product_item-price">780 ₽</p>              
+                </div>
+              </div>
+
+              <div class="banners-section__product  viewed-product">
+                <button class="banners-section__product-fav-btn">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                          fill="#currentColor" />
+                      </svg>
+                    </button>
+                <button class="banners-section__product_item-basket banners-section__product_item-basket-img"></button>
+                <div class="banners-section__product-item   banners-section__product-item--new1">
+                  <img class="banners-section__product_item-img" src="images/viewed__product-2.png" alt="">
+                  <a class="banners-section__product_item-category" href="#">Наушники</a>
+                  <a class="banners-section__product_item-title" href="#">Наушники EAR31 (красный)
+                  </a>              
+                  <p class="banners-section__product_item-price">780 ₽</p>              
+                </div>
+              </div>
+
+              <div class="banners-section__product viewed-product viewed-product3">
+                <button class="banners-section__product-fav-btn">
+                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4.25 0C5.11822 0 5.91422 0.275125 6.61584 0.81775C7.2885 1.33797 7.73634 2.00056 8 2.48237C8.26366 2.00053 8.7115 1.33797 9.38416 0.81775C10.0858 0.275125 10.8818 0 11.75 0C14.1729 0 16 1.98178 16 4.60981C16 7.449 13.7205 9.39153 10.2697 12.3322C9.68372 12.8317 9.0195 13.3977 8.32912 14.0014C8.23812 14.0811 8.12125 14.125 8 14.125C7.87875 14.125 7.76187 14.0811 7.67087 14.0015C6.98044 13.3977 6.31625 12.8316 5.72991 12.3319C2.27947 9.39153 0 7.449 0 4.60981C0 1.98178 1.82713 0 4.25 0Z"
+                          fill="#currentColor" />
+                      </svg>
+                    </button>
+                <button class="banners-section__product_item-basket banners-section__product_item-basket-img"></button>
+                <div class="banners-section__product-item   banners-section__product-item--new1">
+                  <img class="banners-section__product_item-img" src="images/viewed__product-3.png" alt="">
+                  <a class="banners-section__product_item-category" href="#">Наушники</a>
+                  <a class="banners-section__product_item-title" href="#">Наушники EAR6 (черный)
+                  </a>              
+                  <p class="banners-section__product_item-price">780 ₽</p>              
+                </div>
+              </div>
+
+            </div>
+            <div class="viewed__slide viewed__slide-2">
+            
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+
+
+    <nav class="dws-menu">
+      <ul>
+        <li><a href="#"></i>Каталог товаров</a>
+          <ul>
+            <li><a href="#">Чехлы и накладки</a></li>
+            <li><a href="#">Автомобильные зарядки</a> </li>
+            <li><a href="#">Держатели и попсокеты</a> </li>
+            <li><a href="#">Сетевые зарядки</a> </li>
+            <li><a href="#">Наушники и гарнитуры</a> </li>
+            <li><a href="#">Стекла и пленки</a> </li>
+          </ul>
+        </li>
+        <li><a href="#">О компании</a>
+          <ul>
+            <li><a href="#">Карьера</a> </li>
+            <li><a href="#">Магазины</a> </li>
+            <li><a href="#">Акции</a> </li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка и оплата</a>
+          <ul>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Оплата</a> </li>
+            <li><a href="#">Возврат</a> </li>
+          </ul>
+        </li>
+        <li><a href="#">Распродажа</a></li>
+        <li><a href="#">Акции</a></li>
+        <li><a href="#">Контакты</a>
+          <ul>
+            <li><a href="mailto:support@fixcase.ru">support@fixcase.ru</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+
+      <div class="container">
+        <div class="footer__navs-inner">
+          <nav class="footer__nav-catalog">
+            <ul>
+              <li> <h4>Каталог товаров</h4></li>
+              <li><a href="#">Чехлы и накладки</a></li>
+              <li><a href="#">Автомобильные зарядки</a> </li>
+              <li><a href="#">Держатели и попсокеты</a> </li>
+              <li><a href="#">Сетевые зарядки</a> </li>
+              <li><a href="#">Наушники и гарнитуры</a> </li>
+              <li><a href="#">Стекла и пленки</a> </li>
+            </ul>
+          </nav>
+          <nav class="footer__nav-about">
+            <ul>
+            <li>
+              <h4>О компании</h4></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Карьера</a> </li>
+            <li><a href="#">Магазины</a> </li>
+            <li><a href="#">Акции</a> </li>
+            </ul>
+          </nav>
+          <nav class="footer__nav-delivery-payment">
+            <ul>
+              <li>
+                <h4>Доставка и оплата</h4></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Оплата</a> </li>
+              <li><a href="#">Возврат</a> </li>
+            </ul>
+          </nav>
+          <div class="footer__contacts">
+            <a href="#"><img class="footer-logo-mini" src="images/logo-footer-mini.png" alt=""></a>
+            <nav class="footer__nav-contacts">
+              <ul>
+                <li><h4>Контакты</h4></li>
+                <li><address>Россия, г. Краснодар
+                ул. Красных Партизан, 218</address></li>
+                <li class="footer__email"><a href="mailto:support@fixcase.ru">support@fixcase.ru</a></li>
+                <li class="footer__phone"><a href="tel:89002834869  ">8 (900) 283-48-69</a></li>
+              </ul>
+            </nav>
+            <div class="social">
+              <p class="foot-soc-title-mini">Мы в соцсетях</p>
+              <ul class="social__list">
+                <li class="social__list__item"><a href="#" class="social__item-link">                  
+                    <svg class="social-svg-1" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="42" height="42" rx="21" fill="currentcolor" fill-opacity="1" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M29.2166 14.0982C30.1161 14.3404 30.8253 15.0496 31.0675 15.9491C31.5172 17.5924 31.4999 21.0174 31.4999 21.0174C31.4999 21.0174 31.4999 24.4252 31.0675 26.0685C30.8253 26.968 30.1161 27.6772 29.2166 27.9194C27.5732 28.3518 21 28.3518 21 28.3518C21 28.3518 14.444 28.3518 12.7834 27.9021C11.8838 27.6599 11.1746 26.9507 10.9325 26.0512C10.5 24.4252 10.5 21.0001 10.5 21.0001C10.5 21.0001 10.5 17.5924 10.9325 15.9491C11.1746 15.0496 11.9011 14.3231 12.7834 14.0809C14.4267 13.6484 21 13.6484 21 13.6484C21 13.6484 27.5732 13.6484 29.2166 14.0982ZM24.3735 21.0002L18.9073 24.1485V17.852L24.3735 21.0002Z"
+                        fill="currentColor" />
+                    </svg>
+                  </a>                  
+                </li>
+                <li class="social__list__item"><a href="#" class="social__item-link">
+                  <svg class="social-svg-1" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="42" height="42" rx="21" fill="currentColor"  />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M24.5185 28.6756C25.6019 29.1496 26.0082 28.1565 26.0082 28.1565L28.8749 13.7556C28.8523 12.785 27.5431 13.3719 27.5431 13.3719L11.4945 19.6694C11.4945 19.6694 10.727 19.9403 10.7948 20.4143C10.8625 20.8883 11.4719 21.114 11.4719 21.114L15.5123 22.4684C15.5123 22.4684 16.7312 26.4636 16.9795 27.231C17.2052 27.9759 17.4083 27.9985 17.4083 27.9985C17.6341 28.0888 17.8372 27.9308 17.8372 27.9308L20.4555 25.5607L24.5185 28.6756ZM25.2181 16.3062C25.2181 16.3062 25.7824 15.9676 25.7598 16.3062C25.7598 16.3062 25.8501 16.3513 25.5567 16.6673C25.2858 16.9382 18.898 22.6714 18.0402 23.4389C17.9725 23.484 17.9274 23.5517 17.9274 23.642L17.6791 25.7638C17.6339 25.9895 17.3405 26.0121 17.2728 25.8089L16.2119 22.3329C16.1668 22.1974 16.2119 22.0394 16.3473 21.9491L25.2181 16.3062Z"
+                      fill="currentColor" />
+                  </svg>
+                </a></li>
+                <li class="social__list__item"><a href="#" class="social__item-link">
+                <svg class="social-svg-1" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="21" fill="currentColor" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M29.7659 16.5498C29.8937 16.0888 29.7659 15.75 29.158 15.75H27.1477C26.6365 15.75 26.4011 16.0427 26.2733 16.3655C26.2733 16.3655 25.2509 19.0626 23.8027 20.8146C23.3342 21.3218 23.1212 21.4829 22.8656 21.4829C22.7378 21.4829 22.5529 21.3218 22.5529 20.8608V16.5498C22.5529 15.9965 22.4046 15.75 21.9785 15.75H18.8196C18.5003 15.75 18.3081 16.0068 18.3081 16.2502C18.3081 16.7747 19.0321 16.8957 19.1068 18.371V21.5754C19.1068 22.278 18.9896 22.4054 18.734 22.4054C18.0526 22.4054 16.395 19.696 15.4117 16.596C15.219 15.9934 15.0257 15.75 14.512 15.75H12.5017C11.9274 15.75 11.8125 16.0427 11.8125 16.3655C11.8125 16.9418 12.4941 19.8004 14.9858 23.5811C16.6471 26.1627 18.9873 27.5625 21.117 27.5625C22.395 27.5625 22.5529 27.2516 22.5529 26.7162V24.7648C22.5529 24.1431 22.6739 24.0191 23.0784 24.0191C23.3768 24.0191 23.8878 24.1804 25.0806 25.4252C26.4436 26.9004 26.6681 27.5625 27.4349 27.5625H29.4451C30.0195 27.5625 30.3067 27.2516 30.141 26.6382C29.9598 26.0267 29.309 25.1398 28.4455 24.0882C27.9769 23.4887 27.2741 22.8433 27.0613 22.5206C26.763 22.1056 26.8482 21.9213 27.0613 21.5526C27.0613 21.5526 29.5103 17.8178 29.7659 16.5498Z"
+                    fill="currentColor" />
+                </svg>
+                </a></li>
+                <li class="social__list__item"><a href="#" class="social__item-link">
+                <svg class="social-svg-1" width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="42" height="42" rx="21" fill="currentColor"  />
+                  <path
+                    d="M27.7234 14.3027C26.1427 12.6887 23.9576 11.8125 21.726 11.8125C16.9838 11.8125 13.1715 15.64 13.218 20.2976C13.218 21.7733 13.6364 23.2029 14.3338 24.4941L13.125 28.875L17.6347 27.7221C18.89 28.4139 20.2847 28.7367 21.6795 28.7367C26.3752 28.7367 30.1875 24.9091 30.1875 20.2515C30.1875 17.9919 29.3042 15.8706 27.7234 14.3027ZM21.726 27.3071C20.4707 27.3071 19.2154 26.9843 18.1461 26.3387L17.8672 26.2003L15.1706 26.8921L15.868 24.2635L15.6821 23.9868C13.6364 20.7127 14.6127 16.3779 17.9601 14.3488C21.3076 12.3198 25.6313 13.2882 27.6769 16.6084C29.7226 19.9287 28.7463 24.2174 25.3988 26.2465C24.3295 26.9382 23.0278 27.3071 21.726 27.3071ZM25.8173 22.1883L25.3059 21.9578C25.3059 21.9578 24.562 21.635 24.0971 21.4044C24.0506 21.4044 24.0041 21.3583 23.9576 21.3583C23.8181 21.3583 23.7251 21.4044 23.6322 21.4505C23.6322 21.4505 23.5857 21.4966 22.9348 22.2345C22.8883 22.3267 22.7953 22.3728 22.7023 22.3728H22.6558C22.6093 22.3728 22.5163 22.3267 22.4699 22.2806L22.2374 22.1883C21.726 21.9578 21.2611 21.6811 20.8891 21.3122C20.7962 21.2199 20.6567 21.1277 20.5637 21.0355C20.2382 20.7127 19.9128 20.3438 19.6803 19.9287L19.6339 19.8365C19.5874 19.7904 19.5874 19.7443 19.5409 19.652C19.5409 19.5598 19.5409 19.4676 19.5874 19.4215C19.5874 19.4215 19.7733 19.1909 19.9128 19.0525C20.0058 18.9603 20.0523 18.822 20.1453 18.7297C20.2382 18.5914 20.2847 18.4069 20.2382 18.2686C20.1918 18.038 19.6339 16.7929 19.4944 16.5162C19.4014 16.3779 19.3084 16.3318 19.1689 16.2856H19.0295C18.9365 16.2856 18.797 16.2856 18.6575 16.2856C18.5645 16.2856 18.4716 16.3318 18.3786 16.3318L18.3321 16.3779C18.2391 16.424 18.1461 16.5162 18.0531 16.5623C17.9602 16.6546 17.9137 16.7468 17.8207 16.839C17.4952 17.2541 17.3093 17.7613 17.3093 18.2686C17.3093 18.6375 17.4022 19.0064 17.5417 19.3292L17.5882 19.4676C18.0066 20.3438 18.5645 21.1277 19.3084 21.8194L19.4944 22.0039C19.6339 22.1422 19.7733 22.2345 19.8663 22.3728C20.8426 23.2029 21.9584 23.8024 23.2137 24.1252C23.3532 24.1713 23.5392 24.1713 23.6786 24.2174C23.8181 24.2174 24.0041 24.2174 24.1436 24.2174C24.376 24.2174 24.655 24.1252 24.8409 24.0329C24.9804 23.9407 25.0734 23.9407 25.1664 23.8485L25.2594 23.7563C25.3524 23.664 25.4453 23.6179 25.5383 23.5257C25.6313 23.4334 25.7243 23.3412 25.7708 23.249C25.8638 23.0645 25.9103 22.834 25.9567 22.6034C25.9567 22.5111 25.9567 22.3728 25.9567 22.2806C25.9567 22.2806 25.9103 22.2345 25.8173 22.1883Z"
+                    fill="currentColor" />
+                </svg>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__logos-inner">
+          <a href="footer__logo">
+            <img src="images/logo-footer.png" alt="">
+          </a>
+          <img class="footer__payment-systems" src="images/payment systems.png" alt="">
+          </div>
+            </div>
+      </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom_text-box">
+      <img class="footer-payments-mini" src="images/payment systems-mini.png" alt="">
+        <p class="p1">© Fixcase — интернет магазин, 2020</p>
+        <a href="">
+          <p>Политика конфиденциальности</p>
+        </a>
+    </div>
+  </div>
+
+  </footer>
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/choices.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

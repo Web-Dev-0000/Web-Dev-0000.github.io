@@ -1,0 +1,91 @@
+
+@import "global";
+
+
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  color: #527ccd;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px 0 10px;
+  margin-bottom: 40px;
+}
+.arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 160px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 60px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  svg {
+    fill: none;
+  }
+  svg:hover {
+    fill: #ccddff;
+  }
+}
+
+
+
+.slider {
+  &__wrapper {
+    overflow: hidden;
+  }
+  &__items {
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+    width: 4640px;
+  }
+
+  &__card {
+    width: 260px;
+    height: 420px;
+    border: 1px solid rgba(82, 124, 205, 0.6); ;
+    padding: 20px;
+    margin-right: 40px;
+  }
+ 
+  &__date {
+    opacity: 0.6;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 10px 0;
+  }
+
+  & h3 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+
+
